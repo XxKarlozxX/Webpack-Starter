@@ -1,11 +1,1 @@
-$body-color: slateblue;
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.poke-info {
-  display: inline-block;
-  margin: 20px;
-  width: 15%;
-}
+@import './custom'

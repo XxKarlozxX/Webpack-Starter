@@ -20,5 +20,5 @@ instance
                     </details>
                 </div>`);
         });
-        test.innerHTML = pokeTemplate.join(' ');
+       test.innerHTML = pokeTemplate.join(' ');
     });
