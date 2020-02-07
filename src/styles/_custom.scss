@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
+.anchor {
+  position: relative;
+  float: right;
+  right: 10%;
+}
 h1 {
   margin-top: 3%;
   text-align: center;

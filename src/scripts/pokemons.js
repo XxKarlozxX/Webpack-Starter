@@ -4,20 +4,17 @@ const instance = axios.create({
     timeout: 1000
 });
 
-let test = document.getElementById('root');
+let test = document.getElementById('promise');
 
 instance
-    .get('pokemon?limit=150')
+    .get('pokemon?limit=151')
     .then( res => {
         let pokemons = res.data.results;
 
         let pokeTemplate = [];
         pokeTemplate = pokemons.map( pokemon => {
             return (`<div class="poke-info">
-                    <details>
-                        <summary>${pokemon.name}</summary>
-                        <p class="description">${pokemon.url}</p>
-                    </details>
+                        <p class="poke-name">${pokemon.name}</p>
                 </div>`);
         });
        test.innerHTML = pokeTemplate.join(' ');
